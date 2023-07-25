@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Outfit:wght@300;400;600&family=Overpass:wght@100;300;400;500;600;700&family=Oxanium:wght@300;400;700&family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Outfit:wght@300;400;600&family=Overpass:wght@100;300;400;500;600;700&family=Oxanium:wght@300;400;700&family=Press+Start+2P&display=swap");
 
 * {
   margin: 0;
@@ -18,7 +18,8 @@ body {
 
 main {
   width: 350px;
-  height: 400px;
+  height: 370px;
+  border-radius: 15px;
 
   display: flex;
   flex-direction: column;
@@ -37,21 +38,28 @@ main {
 .pattern-card {
   width: 350px;
   height: 135px;
+  border-radius: 15px 15px 0px 0px;
 }
 
 .pfp {
   border: solid white 5px;
   border-radius: 50%;
+  margin-top: -80px;
+
+  position: relative;
 }
 
 .profile {
   width: 350px;
-  padding: 20px;
-  border-bottom: 1px solid hsla(0, 0%, 59%, 0.5);
+  margin-top: -10px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.profile p {
+  margin-bottom: 5px;
 }
 
 .name {
@@ -66,16 +74,21 @@ main {
 }
 
 .city {
+  font-size: 15px;
   color: hsl(0, 0%, 59%);
 }
 
 .informations {
+  padding: 10px 5px 5px 5px;
+  border-top: 1px solid hsla(0, 0%, 59%, 0.5);
+
   display: flex;
   align-items: center;
 }
 
 .followers {
   margin: 20px 30px 20px 30px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,6 +96,7 @@ main {
 
 .likes {
   margin: 20px 30px 20px 30px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,6 +104,7 @@ main {
 
 .photos {
   margin: 20px 30px 20px 30px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,4 +119,35 @@ main {
   font-size: 10px;
   letter-spacing: 2px;
   color: hsl(0, 0%, 59%);
+}
+
+.background-top {
+    width: 978px;
+    height: 978px;
+
+    position: fixed;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(5%, 5%);
+
+    background-image: url(../images/bg-pattern-top.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.background-bottom {
+    width: 978px;
+    height: 978px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-5%, -5%);
+    
+    background-image: url(../images/bg-pattern-bottom.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
